@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head id="head-container">
+    <!-- head.html içeriği buraya yüklenecek -->
+  </head>
+  <body>
+    <div id="header-container">
+      <!-- header.html içeriği buraya yüklenecek -->
+    </div>
+
+    <div id="hero-container">
+      <!-- hero.html içeriği buraya yüklenecek -->
+    </div>
+
+    <div class="main-container">
+      <div id="main-content">
+        <!-- main.html içeriği buraya yüklenecek -->
+      </div>
+
+      <div id="sidebar-container">
+        <!-- sidebar.html içeriği buraya yüklenecek -->
+      </div>
+    </div>
+
+    <div id="special-container">
+      <!-- special.html içeriği buraya yüklenecek -->
+    </div>
+
+    <div id="newsletter-container">
+      <!-- newsletter.html içeriği buraya yüklenecek -->
+    </div>
+
+    <div id="footer-container">
+      <!-- footer.html içeriği buraya yüklenecek -->
+    </div>
+
+    <script>
+      // Bileşenleri yükleyen yardımcı fonksiyon
+      async function loadComponent(containerId, componentPath) {
+        try {
+          const response = await fetch(`components/${componentPath}`);
+          if (!response.ok)
+            throw new Error(`HTTP error! status: ${response.status}`);
+          const content = await response.text();
+          document.getElementById(containerId).innerHTML = content;
+        } catch (error) {
+          console.error(`Error loading ${componentPath}:`, error);
+        }
+      }
+
+      // Tüm bileşenleri yükle
+      document.addEventListener("DOMContentLoaded", async () => {
+        await Promise.all([
+          loadComponent("head-container", "head.html"),
+          loadComponent("header-container", "header.html"),
+          loadComponent("hero-container", "hero.html"),
+          loadComponent("main-content", "main-content.html"),
+          loadComponent("sidebar-container", "sidebar.html"),
+          loadComponent("special-container", "special.html"),
+          loadComponent("newsletter-container", "newsletter.html"),
+          loadComponent("footer-container", "footer.html"),
+        ]);
+      });
+    </script>
+
+    <!-- Mevcut JavaScript dosyaları -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

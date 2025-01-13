@@ -1,0 +1,251 @@
+<!-- Header Section -->
+<header class="main-header">
+  <nav class="navbar">
+    <div class="logo">
+      <a href="/" aria-label="Oracnoos.com Homepage">
+        <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40">
+          <defs>
+            <linearGradient
+              id="logo-gradient"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop offset="0%" style="stop-color: #00d4ff" />
+              <stop offset="100%" style="stop-color: #00ff85" />
+            </linearGradient>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+              <feMerge>
+                <feMergeNode in="coloredBlur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+          <!-- Dış Halka -->
+          <circle
+            cx="20"
+            cy="20"
+            r="19"
+            stroke="url(#logo-gradient)"
+            stroke-width="2"
+            fill="none"
+            filter="url(#glow)"
+          />
+          <!-- İç Halka -->
+          <circle
+            cx="20"
+            cy="20"
+            r="14"
+            stroke="url(#logo-gradient)"
+            stroke-width="2"
+            fill="none"
+            opacity="0.7"
+          />
+          <!-- Merkez Nokta -->
+          <circle cx="20" cy="20" r="4" fill="url(#logo-gradient)" />
+          <!-- Bağlantı Çizgileri -->
+          <path
+            d="M20 16 L20 8"
+            stroke="url(#logo-gradient)"
+            stroke-width="2"
+          />
+          <path
+            d="M20 32 L20 24"
+            stroke="url(#logo-gradient)"
+            stroke-width="2"
+          />
+          <path
+            d="M16 20 L8 20"
+            stroke="url(#logo-gradient)"
+            stroke-width="2"
+          />
+          <path
+            d="M32 20 L24 20"
+            stroke="url(#logo-gradient)"
+            stroke-width="2"
+          />
+        </svg>
+        <span class="logo-text">Oracnoos</span>
+      </a>
+    </div>
+    <div class="nav-links">
+      <ul>
+        <li>
+          <a href="#news" aria-label="News">News</a>
+          <ul class="dropdown">
+            <li>
+              <a href="#latest-news" aria-label="Latest News">Latest News</a>
+            </li>
+            <li>
+              <a href="#global-trends" aria-label="Global Trends"
+                >Global Trends</a
+              >
+            </li>
+            <li>
+              <a href="#industry-updates" aria-label="Industry Updates"
+                >Industry Updates</a
+              >
+            </li>
+            <li>
+              <a href="#science-innovations" aria-label="Science Innovations"
+                >Science Innovations</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#technology" aria-label="Technology">Technology</a>
+          <ul class="dropdown">
+            <li>
+              <a href="#ai-ml" aria-label="AI & Machine Learning"
+                >AI & Machine Learning</a
+              >
+            </li>
+            <li>
+              <a href="#cybersecurity" aria-label="Cybersecurity"
+                >Cybersecurity</a
+              >
+            </li>
+            <li>
+              <a href="#blockchain" aria-label="Blockchain">Blockchain</a>
+            </li>
+            <li>
+              <a href="#iot" aria-label="Internet of Things (IoT)"
+                >Internet of Things (IoT)</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#reviews" aria-label="Reviews">Reviews</a>
+          <ul class="dropdown">
+            <li>
+              <a href="#smartphone-reviews" aria-label="Smartphone Reviews"
+                >Smartphone Reviews</a
+              >
+            </li>
+            <li>
+              <a href="#laptop-reviews" aria-label="Laptop Reviews"
+                >Laptop Reviews</a
+              >
+            </li>
+            <li>
+              <a href="#gadget-reviews" aria-label="Gadget Reviews"
+                >Gadget Reviews</a
+              >
+            </li>
+            <li>
+              <a href="#app-reviews" aria-label="App Reviews">App Reviews</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#gaming" aria-label="Gaming">Gaming</a>
+          <ul class="dropdown">
+            <li>
+              <a href="#latest-game-releases" aria-label="Latest Game Releases"
+                >Latest Game Releases</a
+              >
+            </li>
+            <li>
+              <a href="#esports-news" aria-label="Esports News">Esports News</a>
+            </li>
+            <li>
+              <a href="#console-reviews" aria-label="Console Reviews"
+                >Console Reviews</a
+              >
+            </li>
+            <li>
+              <a href="#game-tutorials" aria-label="Game Tutorials"
+                >Game Tutorials</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#discover" aria-label="Discover">Discover</a>
+          <ul class="dropdown">
+            <li>
+              <a href="#trending-topics" aria-label="Trending Topics"
+                >Trending Topics</a
+              >
+            </li>
+            <li>
+              <a href="#future-tech" aria-label="Future Tech">Future Tech</a>
+            </li>
+            <li>
+              <a href="#space-exploration" aria-label="Space Exploration"
+                >Space Exploration</a
+              >
+            </li>
+            <li>
+              <a href="#how-tos-tutorials" aria-label="How-Tos & Tutorials"
+                >How-Tos & Tutorials</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#cars" aria-label="Cars">Cars</a>
+          <ul class="dropdown">
+            <li>
+              <a href="#evs" aria-label="Electric Vehicles (EVs)"
+                >Electric Vehicles (EVs)</a
+              >
+            </li>
+            <li>
+              <a href="#latest-models" aria-label="Latest Models"
+                >Latest Models</a
+              >
+            </li>
+            <li>
+              <a href="#autonomous-cars" aria-label="Autonomous Cars"
+                >Autonomous Cars</a
+              >
+            </li>
+            <li>
+              <a href="#car-reviews" aria-label="Car Reviews">Car Reviews</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#phone-comparison" aria-label="Phone Comparison"
+            >Phone Comparison</a
+          >
+          <ul class="dropdown">
+            <li>
+              <a href="#compare-smartphones" aria-label="Compare Smartphones"
+                >Compare Smartphones</a
+              >
+            </li>
+            <li>
+              <a href="#flagship-phones" aria-label="Flagship Phones"
+                >Flagship Phones</a
+              >
+            </li>
+            <li>
+              <a href="#budget-phones" aria-label="Budget Phones"
+                >Budget Phones</a
+              >
+            </li>
+            <li>
+              <a href="#camera-phones" aria-label="Camera Phones"
+                >Camera Phones</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="user-actions">
+      <a href="#" class="login-btn">Login</a>
+      <a href="#" class="signup-btn">Sign Up</a>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." />
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </div>
+  </nav>
+</header>
